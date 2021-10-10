@@ -13,12 +13,12 @@ In general you will learn
 1. Provide an example of an address CSV dataset
 2. Convert address csv data to point coordinates using Geocoding
 3. Show the progress bar of the address conversion process
+4. Show convert geocoding location result on the Google Map
 
 ### Module 2
-1. Show convert geocoding location result on the Google Map
-2. Find places Nearby google maps around the selected location point
-3. Showing 60 places results using pageToken
-4. Show the places details of the selected point of interest
+1. Find places Nearby google maps around the selected location point
+2. Showing 60 places results using pageToken
+3. Show the places details of the selected point of interest
 
 ## Getting Started
 * Clone the repo and open the project.
