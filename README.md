@@ -23,7 +23,7 @@ In general you will learn
 ## Getting Started
 * Clone the repo and open the project.
 * Run `npm install` to install dependencies.
-* Run `cp .env.example .env`
+* Create file di root folder`.env`
 * Add your Google Maps Platform API key.
 
 ## Running App
