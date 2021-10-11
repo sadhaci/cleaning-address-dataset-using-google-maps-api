@@ -22,8 +22,7 @@ export const createMap = () => {
         let m = new google.maps.Marker({
           map: map,
           title: d.addressString,
-          position: d.latLng,
-          icon: 'https://storage.googleapis.com/terra_web/images/marker_50.png'
+          position: d.latLng
         });
   
       m.addListener("mouseover", () => {
@@ -58,7 +57,7 @@ export const createNearby = (latlng) => {
     servicePlace.nearbySearch({
         location: latlng,
         radius: 5000,
-        // type: ['restaurant']
+        type: ['restaurant']
     }, callback);
 
     
@@ -80,7 +79,7 @@ export const callback = (results, status, pagination) => {
   if (status !== google.maps.places.PlacesServiceStatus.OK) {
     return;
   } else {
-    createMarkers(results);
+    createMarkers(results)
 
     if (pagination.hasNextPage) {
       let moreButton = document.getElementById('more');
