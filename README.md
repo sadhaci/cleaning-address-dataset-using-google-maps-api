@@ -24,7 +24,7 @@ In general you will learn
 * Clone the repo and open the project.
 * Run `npm install` to install dependencies.
 * Create file di root folder`.env`
-* Add your Google Maps Platform API key.
+* Add parameter `API_KEY` and Add your Google Maps Platform API key.
 
 ## Running App
 Run `npm run dev` to run the project using webpack-dev-server.
