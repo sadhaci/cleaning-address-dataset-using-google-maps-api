@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Home Section -->
+        <section id="homeSection" class="jumbotron">
+            <h1 class="display-5"><%= htmlWebpackPlugin.options.title %></h1>
+            <p class="lead">
+              Use your CSV data, plot the locations on the map, plan a
+              route, and generate a report.
+            </p>
+            <hr class="my-4" />
+            <p>When you're ready, click the button below to continue.</p>
+            <button id="getStartedButton" class="btn btn-primary">
+              Get Started
+            </button>
+          </section>
+
+        <!-- Import data to cleansing data -->
+        <section id="importSection" class="jumbotron" style="display: none;">
+            <h1 class="display-5">Import Data</h1>
+            <div class="row">
+              <div class="col">
+                <p class="lead">Select a CSV file to parse and use with a map.</p>
+                <div class="input-group mb-3">
+                  <div class="custom-file">
+                    <input
+                      id="csvFileInput"
+                      type="file"
+                      class="custom-file-input"
+                      accept=".csv"
+                      required
+                    />
+                    <label
+                      id="csvFileLabel"
+                      class="custom-file-label"
+                      for="csvFileInput"
+                      >Choose CSV file...</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-4" />
+            <p>When you're ready, click the button below to import your data.</p>
+            <button id="importButton" class="btn btn-primary">Import</button>
+          </section>
+
+        <!-- select fields section -->
+
+        <!-- Show Maps data using geocoding -->
+        <section id="routeSection" class="jumbotron" style="display: none;">
+          <div class="row">
+            <div class="col">
+              <h1 class="display-5">Cleansing Data and Nearby Locations</h1>
+              <p class="lead">
+                Select the locations in order to search neraby poi location in radius 5,000 m.
+              </p>
+              <div id="map"></div>
+              <div class="row mt-4">
+                <div class="col">
+                  <b>Selected Location</b>
+                  <pre id="locationPre">No location to show.</pre>
+                </div>
+                <div class="col">
+                  <b>Coordinates </b>
+                  <pre id="dataPre">No data to show.</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <button id="more" class="btn btn-warning">More results places</button>
+          <ul id="places"></ul>
+        </section>
+      
+        <!-- Nearby search base on the selected marker -->
+
+        <!-- Plan Route Section -->
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= htmlWebpackPlugin.options.apiKey %>&libraries=places"></script>
+</body>
+</html>
