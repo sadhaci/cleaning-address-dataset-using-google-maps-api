@@ -8,6 +8,7 @@ A single-page app to clean up address dataset and find nearby places google by u
 * Webpack
 
 ## Development Tools and Libraries
+* [npm package](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 * [Webpack](https://webpack.js.org/guides/getting-started/#using-a-configuration)
 * [Babel](https://babeljs.io/setup#installation)
 * [jQuery](https://jquery.com/)
