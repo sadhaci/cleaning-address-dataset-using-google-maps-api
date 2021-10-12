@@ -1,13 +1,18 @@
 # cleaning address dataset using google maps api
 A single-page app to clean up address dataset and find nearby places google by using Google Maps API.
 
-## Prerequisites
-In general you will learn
-* Google Maps API (Geocoding API, Maps Javascript API, Nearby Search, Places Details)
-* JavaScript ES6 Syntax
-* JavaScript Promises
+## Prerequisites & What you Learn
+* Basic knowledge of HTML, CSS, and JavaScript
+* API Key Google Maps (Geocoding API, Maps Javascript API, Nearby Search, Places Details)
 * HTML5 Web Storage
 * Webpack
+
+## Development Tools and Libraries
+* [Webpack](https://webpack.js.org/guides/getting-started/#using-a-configuration)
+* [Babel](https://babeljs.io/setup#installation)
+* [jQuery](https://jquery.com/)
+* [Bootstrap 4](https://getbootstrap.com/)
+* [Google Maps JavaScript API](https://developers.google.com/maps/gmp-get-started)
 
 ### Module 1
 1. Provide an example of an address CSV dataset
@@ -28,13 +33,6 @@ In general you will learn
 
 ## Running App
 Run `npm run dev` to run the project using webpack-dev-server.
-
-## Development Tools and Libraries
-* [Webpack](https://webpack.js.org/guides/getting-started/#using-a-configuration)
-* [Babel](https://babeljs.io/setup#installation)
-* [jQuery](https://jquery.com/)
-* [Bootstrap 4](https://getbootstrap.com/)
-* [Google Maps JavaScript API](https://developers.google.com/maps/gmp-get-started)
 
 ## Future Work
 Although the current version of this package adds substantial value, there are other improvements i'd like to implement in the future. The following list is not necessarily exhaustive:
