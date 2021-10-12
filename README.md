@@ -1,7 +1,7 @@
 # cleaning address dataset using google maps api
 A single-page app to clean up address dataset and find nearby places google by using Google Maps API.
 
-## What You Can Learn
+## Prerequisites
 In general you will learn
 * Google Maps API (Geocoding API, Maps Javascript API, Nearby Search, Places Details)
 * JavaScript ES6 Syntax
